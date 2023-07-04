@@ -1,0 +1,65 @@
+-- Getting an overview of the crime scene report
+SELECT *
+FROM crime_scene_report;
+
+-- Filtering out the information that I know
+SELECT *
+FROM crime_scene_report
+WHERE type = 'murder' AND CITY = 'SQL City';
+
+-- Getting details on Annabel (One of the witnesses)
+SELECT *
+From person
+WHERE name LIKE '%Annabel%';
+
+SELECT *
+from interview
+WHERE person_id = 16371;
+
+SELECT MAX(address_number)
+FROM person;
+
+SELECT *
+FROM person
+WHERE address_number = 4919;
+
+SELECT *
+FROM interview
+WHERE person_id = 14887;
+
+SELECT *
+FROM get_fit_now_check_in
+WHERE check_in_date = 20180109;
+
+SELECT *
+FROM get_fit_now_member
+where ID LIKE "%48Z55%";
+
+Select *
+from interview
+where person_id= 67318;
+
+SELECT *
+from drivers_license
+where hair_color = 'red' AND car_make = 'Tesla';
+ 
+select *
+from person
+where license_id IN (202298, 291182, 918773);
+
+SELECT event_name, person_id, date
+FROM facebook_event_checkin
+where person_id IN (7881, 90700, 99716);
+
+INSERT INTO solution (user, value)
+VALUES (1, 'Jeremy Bowers');
+
+SELECT *
+FROM solution;
+
+INSERT INTO solution (user, value)
+VALUES (1, 'Miranda Priestly');
+
+SELECT *
+FROM solution;
+
