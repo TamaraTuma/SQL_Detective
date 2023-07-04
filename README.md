@@ -14,3 +14,5 @@ Follow these steps to solve this challenge:
 7. Create a word or txt document that contains your thought process, narrative and SQL codes written to arrive at the solution to the murder mystery
 8. Submit a link to the word or txt document
 
+#Conclusion
+It was concluded that Jeremy Bowers is the murderer in this crime and he was hired by a female of the name Miranda Preistley
