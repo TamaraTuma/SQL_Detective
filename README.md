@@ -16,4 +16,4 @@ Follow these steps to solve this challenge:
 8. Submit a link to the word or txt document
 
 # Conclusion
-It was concluded that Jeremy Bowers is the murderer in this crime and he was hired by a female of the name Miranda Preistley
+It was concluded that Jeremy Bowers was the murderer in this crime and he was hired by a female of the name Miranda Preistley
