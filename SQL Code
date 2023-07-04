@@ -9,54 +9,66 @@ WHERE type = 'murder' AND CITY = 'SQL City';
 
 -- Getting details on Annabel (One of the witnesses)
 SELECT *
-From person
+FROM person
 WHERE name LIKE '%Annabel%';
 
+-- Retrieving Annabel's witness statement
 SELECT *
-from interview
+FROM interview
 WHERE person_id = 16371;
 
+-- Finding the second witness address number
 SELECT MAX(address_number)
 FROM person;
 
+--Filtering out the witness with the max address number
 SELECT *
 FROM person
 WHERE address_number = 4919;
 
+-- Retreiving the second witness' statement
 SELECT *
 FROM interview
 WHERE person_id = 14887;
 
+-- Getting information on who was at "Get_Fit_Now_Gym" on January 9th
 SELECT *
 FROM get_fit_now_check_in
 WHERE check_in_date = 20180109;
 
+-- Checking memebership_id (48Z55) to get some more information on who this person could be 
 SELECT *
 FROM get_fit_now_member
-where ID LIKE "%48Z55%";
+WHERE ID LIKE "%48Z55%";
 
-Select *
-from interview
-where person_id= 67318;
-
+-- Checking to see whether the person with memebership_id (48Z55) made a statement (JEREMY BOWERS IS THE MURDERER)
 SELECT *
-from drivers_license
-where hair_color = 'red' AND car_make = 'Tesla';
- 
-select *
-from person
-where license_id IN (202298, 291182, 918773);
+FROM interview
+WHERE person_id= 67318;
 
+-- Querying the drivers_license table to see the persons that has ‘red’ hair and drive a Tesla. 
+SELECT *
+FROM drivers_license
+WHERE hair_color = 'red' AND car_make = 'Tesla';
+ 
+-- Checking the license_id # of all three (3) females to get some more information from the person table
+SELECT *
+FROM person
+WHERE license_id IN (202298, 291182, 918773);
+
+-- Check the facebook_event_checkin table to see which female went to the “SQL Symphony Concert 3 times” (MIRANDA PREISTLEY IS THE MASTERMIND)
 SELECT event_name, person_id, date
 FROM facebook_event_checkin
-where person_id IN (7881, 90700, 99716);
+WHERE person_id IN (7881, 90700, 99716);
 
+-- Confirming that Jeremy Bowersis the murderer
 INSERT INTO solution (user, value)
 VALUES (1, 'Jeremy Bowers');
 
 SELECT *
 FROM solution;
 
+-- Confirming that Miranda Priestley is the mastermind
 INSERT INTO solution (user, value)
 VALUES (1, 'Miranda Priestly');
 
