@@ -56,7 +56,7 @@ SELECT *
 FROM person
 WHERE license_id IN (202298, 291182, 918773);
 
--- Check the facebook_event_checkin table to see which female went to the “SQL Symphony Concert 3 times” (MIRANDA PREISTLEY IS THE MASTERMIND)
+-- Check the facebook_event_checkin table to see which female went to the “SQL Symphony Concert 3 times” (MIRANDA PREISTLY IS THE MASTERMIND)
 SELECT event_name, person_id, date
 FROM facebook_event_checkin
 WHERE person_id IN (7881, 90700, 99716);
@@ -68,7 +68,7 @@ VALUES (1, 'Jeremy Bowers');
 SELECT *
 FROM solution;
 
--- Confirming that Miranda Priestley is the mastermind
+-- Confirming that Miranda Priestly is the mastermind
 INSERT INTO solution (user, value)
 VALUES (1, 'Miranda Priestly');
 
